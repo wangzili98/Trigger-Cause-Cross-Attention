@@ -1,6 +1,8 @@
 # Trigger–Cause Cross-Attention (TCA)
 
-PyTorch implementation of **Trigger-Cause Cross-Attention improves debris-flow early warning by learning state-dependent thresholds**. This repository provides TCA pretraining, supervised training, prediction and a minimum example with four real samples.
+Trigger–Cause Cross-Attention (TCA) is a deep learning framework for regional debris-flow early warning. It separately represents antecedent hydrometeorological conditions and catchment susceptibility (Cause) and short-term rainfall forcing (Trigger). Cross-attention uses the integrated Cause representation as the Query and the Trigger sequence as the Key and Value, allowing the model to evaluate rainfall forcing conditional on the catchment state.
+
+This software release provides a PyTorch implementation of TCA, including masked-reconstruction pretraining, supervised multi-task training, prediction, and a minimal input–output example with real samples. Debris-flow occurrence is the primary prediction task, supported by auxiliary magnitude regression. Exported representations and attention weights support analysis of state-dependent triggering and the temporal relevance of rainfall.
 
 ## Run
 
