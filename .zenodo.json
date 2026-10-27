@@ -1,0 +1,14 @@
+{
+  "title": "Trigger–Cause Cross-Attention (TCA)",
+  "description": "PyTorch implementation of Trigger–Cause Cross-Attention (TCA) for debris-flow early warning. Includes separate Cause and Trigger meteorological pretraining, environmental fusion before cross-attention, focal classification, positive-only log-magnitude MSE, sample-level prediction and four real samples for a minimum training and input-output example.",
+  "upload_type": "software",
+  "creators": [
+    {"name": "Wang, Zili"},
+    {"name": "Cui, Peng"}
+  ],
+  "license": "mit",
+  "access_right": "open",
+  "version": "1.0.0",
+  "keywords": ["debris flow", "early warning", "cross attention", "state-dependent thresholds", "PyTorch"],
+  "language": "eng"
+}

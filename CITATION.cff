@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite the archived software release used in your work. Confirm the DOI/version after publication."
+type: software
+title: "Trigger–Cause Cross-Attention (TCA)"
+version: "1.0.0"
+authors:
+  - family-names: Wang
+    given-names: Zili
+  - family-names: Cui
+    given-names: Peng
+doi: 10.5281/zenodo.20580569
+abstract: "PyTorch implementation of Trigger–Cause Cross-Attention (TCA) for debris-flow early warning, with meteorological pretraining, multi-task training, prediction and four real example samples."
+license: MIT
+keywords:
+  - debris flow
+  - early warning
+  - cross attention
+  - state-dependent thresholds
+  - PyTorch

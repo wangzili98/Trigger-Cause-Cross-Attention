@@ -1,0 +1,51 @@
+{
+  "schema": "tca-real-sample-v1",
+  "origin": "real supplied training NPZ subset",
+  "cause_channels": [
+    "log1p_gridded_precipitation",
+    "log1p_gauge_precipitation",
+    "gauge_distance_field"
+  ],
+  "trigger_channels": [
+    "log1p_radar_rainfall",
+    "log1p_gauge_rainfall",
+    "gauge_distance_field"
+  ],
+  "cause_window": "48 hourly input frames",
+  "trigger_window": "18 ten-minute frames",
+  "distance_units": "inherited provider field; exact scaling not documented",
+  "timestamps_locations": "not present in source NPZ; no inferred alignment",
+  "provenance": [
+    {
+      "filename": "fusion_pos_202505.npz",
+      "sha256": "82ceffa803d899c93ad15851b10e3724d815df7838a3ccdcbf9c1faa317f4f2e",
+      "zero_based_rows": [
+        28,
+        29
+      ],
+      "label": 1
+    },
+    {
+      "filename": "fusion_neg_202505.npz",
+      "sha256": "dd6de5c6435a8751032a2bb1ba26bb7fe395386843d37a78ffb5a501e3b386e8",
+      "zero_based_rows": [
+        9,
+        10
+      ],
+      "label": 0
+    }
+  ],
+  "cleanup": {
+    "precip_x": {
+      "nonfinite_pixels": 0,
+      "negative_pixels": 0
+    },
+    "radar_x": {
+      "nonfinite_pixels": 0,
+      "negative_pixels": 0
+    },
+    "static": {
+      "nonfinite_pixels": 0
+    }
+  }
+}
